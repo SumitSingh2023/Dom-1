@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini-calculator</title>
+</head>
+<body>
+    <input type="text" id="number1" placeholder="Enter 1st Number">
+    <input type="text" id ="number2" placeholder="Enter 2nd Number">
+    <br>
+    <br>
+
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Divide</button>
+
+   
+ <script>
+    function add(){
+        let add1=document.getElementById("number1").value
+        let add2=document.getElementById("number2").value
+        let output=((Number(add1))+(Number(add2)))
+        alert(output)
+
+
+    }
+
+    function sub(){
+        let sub1=document.getElementById("number1").value
+        let sub2=document.getElementById("number2").value
+        let output=((Number(sub1))-(Number(sub2)))
+        alert(output)
+
+    }
+
+    function mul(){
+        let mul1=document.getElementById("number1").value
+        let mul2=document.getElementById("number2").value
+        let output=((Number(mul1))*(Number(mul2)))
+        alert(output)
+
+    }
+
+    function div(){
+        let div1=document.getElementById("number1").value
+        let div2=document.getElementById("number2").value
+        let output=((Number(div1))/(Number(div2)))
+        alert(output)
+
+
+    }
+ </script>
+
+
+
+</body>
+</html>
